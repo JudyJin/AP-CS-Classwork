@@ -3,6 +3,8 @@ import java.util.*;
  * Main method of the chess game.
  *
  * @Judy Jin
+ * @Date: Dec.27, 2017
+ * @Instructor: Daneil Gunn
  * @1.0
  */
 public class Chess

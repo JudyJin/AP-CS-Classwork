@@ -3,6 +3,8 @@ import java.util.*;
  * This class aimed at generating, processing, and judging the game.
  *
  * @Judy Jin
+ * @Date: Dec.27, 2017
+ * @Instructor: Daneil Gunn
  * @1.0 
  */
 public class Chessboard
