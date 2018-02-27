@@ -1,5 +1,6 @@
- import java.util.*;
-/**@author S3C7 Judy Jin & Steven Jin
+import java.util.*;
+/**
+ * Author S3C7 Judy Jin & Steven Jin
  * Instructor: Daniel Gunn
  * Date: Feb 18, 2018
  * Brief instruction: This program is a BlackJack game.
@@ -58,7 +59,7 @@ public class BlackJack
             System.out.println("\nDealer turn 1: " + Com);
             //Number definded for computer
             if (Computer==1)
-                compChoice(Computer,Compsum);
+                Computer=compChoice(Computer,Compsum);
             Compsum+=Computer;
         
             //First player's turn
@@ -67,7 +68,7 @@ public class BlackJack
             System.out.println("\nPlayer turn 1 : " + player);
             //Number definded for player
             if (Player==1)
-                choice(Player);
+                Player=choice(Player);
                 Playersum+=Player;
         
             for(CompCount=2;CompCount<=5&&Compsum<=17;CompCount++)
@@ -75,7 +76,7 @@ public class BlackJack
                 Computer=deck.cards[count++].value;
                 System.out.println("\nDealer turn " + CompCount+ ": hide" );
                 if (Computer==1)
-                    compChoice(Computer,Compsum);
+                    Computer=compChoice(Computer,Compsum);
                     Compsum+=Computer;
             }
     
@@ -86,13 +87,13 @@ public class BlackJack
                 System.out.println("\nPlayer turn " + PlayerCount+": " +player);
                 //Number definded for player
                 if (Player==1)
-                    choice(Player);
+                    Player=choice(Player);
                 Playersum+=Player;
                 System.out.println("\nPlayer's total: "+Playersum);
             
                 if (Playersum<=21)
                 {
-                System.out.print("Do you want to do next hit(true/false): ");
+                System.out.print("\nDo you want to do next hit(true/false): ");
         
                 boolean next=input.nextBoolean();
          
@@ -145,8 +146,11 @@ public class BlackJack
                 else
                     System.out.println("\nDealer win!!!!" );
             }
-            System.out.print("\nPress 1 to play again.");
+            
+            System.out.print("\nPress 1 to play again. ");
             play=input.nextInt();
+            Compsum=0;
+            Playersum=0;
             
             if (count>=44)
             {
