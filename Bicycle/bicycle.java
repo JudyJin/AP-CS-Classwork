@@ -58,14 +58,27 @@ public class bicycle
             String size=s.nextLine();
             if (size.equals("small"))
                 tyreRadius=22;
-            else if (place.equals("medium"))
+            else if (size.equals("medium"))
                 tyreRadius=24;
-            else if (place.equals("large"))
+            else if (size.equals("large"))
                 tyreRadius=26;
             else
                 tyreRadius=24;
             System.out.println("Your tyre size is "+this.tyreRadius+"inches."); 
         }
-
+        if (setter.equals("manual"))
+        {
+            System.out.println("What type of bicycle do you want?");
+            type=s.nextLine();
+            System.out.println("We provide you "+type+".");      
+            
+            System.out.println("What frame size do you want?");
+            frameSize=s.nextLine();
+            System.out.println("Your frame size is "+this.frameSize+".");   
+            
+            System.out.println("Choose size for your bicycle's tyre in inches.");
+            tyreRadius=s.nextDouble();
+            System.out.println("Your tyre size is "+this.tyreRadius+"inches."); 
+        }
     }
 }
