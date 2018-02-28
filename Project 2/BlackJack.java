@@ -20,7 +20,7 @@ public class BlackJack
     public static int choice(int A)
     {
         Scanner input = new Scanner(System.in);
-        System.out.print("What value would you use for A(1,11): "); 
+        System.out.print("\nWhat value would you use for A(1,11): "); 
         int choice = input.nextInt();
         if(choice==1)
             A=1;
@@ -93,14 +93,14 @@ public class BlackJack
             
                 if (Playersum<=21)
                 {
-                System.out.print("\nDo you want to do next hit(true/false): ");
+                    System.out.print("\nDo you want to do next hit(true(1)/false(2)): ");
         
-                boolean next=input.nextBoolean();
+                    int next=input.nextInt();
          
-                if(next== true)
-                    continue;
-                else
-                    break;
+                    if(next== 1)
+                        continue;
+                    else
+                        break;
                 }
                 else
                     break;
