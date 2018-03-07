@@ -1,10 +1,10 @@
-
 import java.util.*;
 /**
- * Write a description of class Library here.
+ * This is a library main class.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @Author: Judy Jin
+ * @Instructor: Daniel Gunn
+ * @Date: Mar.6, 2018
  */
 public class Library
 {
