@@ -28,4 +28,12 @@ public class CD extends LibraryItem
             System.out.println(this.title+" is not on loan");
         System.out.println(this.title+" is due on "+this.dueDate+"\n");
     }
+    public String getGenre()
+    {
+        return this.Genre;
+    }
+    public void setGenre(String r)
+    {
+        this.Genre=r;
+    }
 }

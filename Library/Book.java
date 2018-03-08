@@ -32,5 +32,22 @@ public class Book extends LibraryItem
         else 
             System.out.println(title+" is not requested\n");
     }
-    
+    public boolean getIsRequested()
+    {
+        return isRequested;
+    }
+    public void setIsRequested()
+    {
+        boolean r;
+        Scanner s=new Scanner(System.in);
+        if (this.isRequested==true)
+        {    
+            System.out.println(this.title+" is already requested. Do you want to cancel the request?");
+            r=s.nextBoolean();
+            if (r==true)
+                isRequested=false;
+        }
+        else
+            isRequested=true;
+    }
 }
