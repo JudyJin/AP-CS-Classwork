@@ -14,11 +14,14 @@ public class Circle extends Shape
     public Circle(double circleRadius, String circleName) 
     {
         super(circleName);
-        radius = Math.abs(circleRadius); 
+        this.radius = Math.abs(circleRadius); 
     }
     public double getRadius()
     {
         return radius;
+    }
+    public boolean equals(Circle obj){
+        return (this.radius==obj.radius);
     }
     public double area()
     {

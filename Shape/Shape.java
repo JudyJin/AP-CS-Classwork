@@ -9,6 +9,7 @@ import java.util.*;
 public abstract class Shape
 {
     private String name;
+    public double radius;
     public Shape(String shapeName) 
     {
         name = shapeName; 
@@ -17,13 +18,16 @@ public abstract class Shape
     { 
         return name; 
     }
+    public double getRadius()
+    {
+        return radius;
+    }
     public abstract double area(); 
     public abstract double perimeter();
     public double semiPerimeter()
     {
         return perimeter() / 2; 
     } 
-    
     public static void runner()
     {
         Random rng=new Random();
@@ -31,6 +35,13 @@ public abstract class Shape
         System.out.println("This circle's name is: "+x.getName());
         System.out.println("This circle's area is: "+x.area());
         System.out.println("This circle's circumference is: "+x.perimeter());
+        
+        System.out.print("Test .equals:");
+        Circle TEST1= new Circle(5,"Circle 1");
+        Circle TEST2= new Circle(5,"Circle 2");
+        System.out.println (TEST1.equals(TEST2));
+        
+        
        
         Shape aa= new Rectangle(rng.nextInt(),rng.nextInt(), "Judy's Square");        
         System.out.println("This rectangle's area is: "+aa.area());

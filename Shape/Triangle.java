@@ -14,17 +14,17 @@ public class Triangle extends Shape
     public Triangle(double length,double height, String triName)
     {
         super(triName);
-        length=Math.abs(length);
-        height=Math.abs(height);
+        this.length=Math.abs(length);
+        this.height=Math.abs(height);
     }
     public double area()
     {
-        area=length*height*1/2;
-        return area;
+        this.area=length*height*1/2;
+        return this.area;
     }
     public double perimeter()
     {
-        peri=Math.pow((length*1/2*length*1/2+height*height),1/2)*2+length;
-        return peri;
+        this.peri=Math.pow((length*1/2*length*1/2+height*height),1/2)*2+length;
+        return this.peri;
     }
 }

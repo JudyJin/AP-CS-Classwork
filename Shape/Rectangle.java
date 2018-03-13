@@ -14,17 +14,17 @@ public class Rectangle extends Shape
     public Rectangle(double length,double width, String recName)
     {
         super(recName);
-        length=Math.abs(length);
-        width=Math.abs(width);
+        this.length=Math.abs(length);
+        this.width=Math.abs(width);
     }
     public double area()
     {
-        area=length*width;
-        return area;
+        this.area=length*width;
+        return this.area;
     }
     public double perimeter()
     {
-        peri=length*2+width*2;
-        return peri;
+        this.peri=length*2+width*2;
+        return this.peri;
     }
 }
