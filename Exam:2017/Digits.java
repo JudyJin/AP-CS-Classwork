@@ -1,6 +1,6 @@
 import java.util.*;
 /**
- * 2007 free response #1
+ * 2017 free response #1
  * Author: Judy Jin
  * Instructor: Daniel Gunn
  * Date: Apr.25, 2018
